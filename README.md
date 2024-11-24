@@ -1,2 +1,2 @@
 # resume
-My Resume Linked to Cloudflare Workers for instant deployment to jamesbernardi.com
+My site Linked to Cloudflare Pages for instant deployment to jamesbernardi.com
