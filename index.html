@@ -32,13 +32,31 @@
     <section class="center-section">
       <h2>Projects</h2>
       <p>
-      <h3><a href="https://github.com/jamesbernardi/aws-eks-demo/tree/main" target="_blank"> AWS EKS</a></h3>
-        Using Terraform, Official Terraform Modules, custom built modules and Terraform Workspaces to deploy and AWS EKS Cluster.
-          The main idea was to use a <a href="https://github.com/jamesbernardi/aws-eks-demo/blob/main/environments.tf" target="_blank"> central configuration file</a> to deploy multiple environments.  Using the CI/CD pipeline to trigger builds 
-          based on environment tags. Keeping a clean code base across all environments and allowing iterations to be easily tracked and 
-          deployed across environments.
+      <h3><a href="https://github.com/jamesbernardi/aws-eks-demo/tree/main" target="_blank"> AWS EKS Cluster Deployment with Terraform</a></h3>
+        This project demonstrates the deployment of an AWS EKS (Elastic Kubernetes Service) cluster using a combination of Terraform, 
+        official Terraform modules, custom-built modules, and Terraform Workspaces. The central concept is to use a 
+        <a href="https://github.com/jamesbernardi/aws-eks-demo/blob/main/environments.tf" target="_blank">single configuration file</a> 
+        to manage multiple environments seamlessly. By leveraging a CI/CD pipeline, builds are triggered based on environment-specific tags, 
+        ensuring a clean and consistent codebase across all environments. This approach allows for streamlined iterations, enabling easy 
+        tracking and deployment of changes across instances.
       </p>
-      </section>
+      <p>
+        The Kubernetes cluster is fully configured with access rights, logging, and ingress routing using Traefik. This is achieved through Terraform and Helm 
+        charts where applicable. Applications are deployed to the Kubernetes cluster based on the centralized <a href="https://github.com/jamesbernardi/aws-eks-demo/blob/main/applications.tf" target="_blank">configuration file</a>, 
+        ensuring consistency across environments.
+      </p>
+      <p>Upon completion of the build process, the result is a fully functional, web-accessible Kubernetes cluster that is ready for application deployments. This setup highlights efficiency, scalability, and best practices 
+        in managing Kubernetes workloads on AWS.</p>
+      <p>
+        <h3><a href="https://github.com/jamesbernardi/aws-ecs-demo/tree/main" target="_blank"> AWS ECS Cluster Deployment with Terraform</a></h3>
+        Similar to the EKS code above; This project demonstrates the deployment of a complete infrastructure stack for Amazon ECS (Elastic Container Service) Fargate using Terraform. By utilizing a combination of official Terraform modules and custom-built modules, the process includes provisioning an ECS cluster with fully configured access rights, logging, and an ingress controller powered by Traefik.
+
+The deployment approach emphasizes modularity and best practices, enabling efficient management of resources while maintaining a clean and organized codebase. This setup ensures that the ECS infrastructure is robust and ready to support containerized applications, providing a scalable and reliable platform for modern workloads.
+        </p>
+        <p>
+        </p>
+        <p></p>
+        </section>
 
   <section class="center-section">
     <h2>About This Site</h2>
@@ -46,7 +64,7 @@
       This page is hosted on Cloudflare using Cloudflare Pages. 
       Using a simple GitHub integration, changes committed to 
       <a href="https://github.com/jamesbernardi/resume" target="_blank">this repo</a> 
-      are automatically applied. This is a simple, fast, cheap, serverless, and easy solution for hosting sites.
+      are automatically applied. This is a fast, serverless solution for hosting sites.
     </p>
   </section>
 
